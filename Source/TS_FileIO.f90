@@ -2478,7 +2478,6 @@ END SUBROUTINE WrFormattedFF
 !=======================================================================
 SUBROUTINE WrFormattedVP(RootName, p_grid, UHub, V )
 
-USE TSMods
 
 IMPLICIT                NONE
 
