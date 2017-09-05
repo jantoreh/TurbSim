@@ -2501,6 +2501,9 @@ CHARACTER(ErrMsgLen)         :: ErrMsg
 
 
 CHARACTER(3)				 :: Vector (3) = (/ 'X', 'Y', 'Z' /)           ! String used to store components
+CHARACTER(200)               :: FormStr                                 ! String used to store format specifiers.
+CHARACTER(200)               :: FormStr1                                 ! String used to store format specifiers.
+CHARACTER(200)               :: FormStr2                                 ! String used to store format specifiers.
 CHARACTER(200)               :: FormStr3                                 ! String used to store format specifiers.
 CHARACTER(200)               :: FormStr4                                 ! String used to store format specifiers.
 CHARACTER(200)               :: FormStr5                                 ! String used to store format specifiers.
