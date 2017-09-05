@@ -322,7 +322,8 @@ END IF
 
    ! Are we generating formatted (text) FF files?
 IF ( p%WrFile(FileExt_UVW) )  THEN
-   CALL WrFormattedFF(p%RootName, p%grid, p%UHub, V)
+   !CALL WrFormattedFF(p%RootName, p%grid, p%UHub, V)
+   CALL WrFormattedVP(p%RootName, p%grid, p%UHub, V)
 ENDIF ! ( WrFile(FileExt_UVW) )
 
 !..................................................................................................................................
