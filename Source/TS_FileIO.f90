@@ -2534,7 +2534,7 @@ CALL WrScr ( ' Generating vpOne formatted file '//TRIM(RootName)//'.w33.' )
 CALL OpenFOutFile ( UFFF, TRIM( RootName )//'.w33' ,ErrStat,ErrMsg)
         IF (ErrStat /= ErrID_None) then
            call WrScr(Trim(ErrMsg))
-           if (ErrStat >= AbortErrLev) cycle
+         !  if (ErrStat >= AbortErrLev) cycle
         end if
         
 
