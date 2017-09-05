@@ -13,3 +13,6 @@ simulating time series assumes a stationary process.
 
 For more information, please refer to documentation on the [TurbSim web site](https://nwtc.nrel.gov/TurbSim).
 
+## Update
+
+Modified for USFOS/vpOne by jantoreh
