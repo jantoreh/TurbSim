@@ -2561,17 +2561,17 @@ WRITE (UFFF,FormStr8)  "X", REAL(0), REAL(0)
 WRITE (UFFF,FormStr8)  "Y", p_grid%Y(1), p_grid%Y(p_grid%NumGrid_Y)
 WRITE (UFFF,FormStr8)  "Z", p_grid%Z(1), p_grid%Z(p_grid%NumGrid_Z)
 
-!WRITE (UFFF,"('#'/,' GWF MeanWind ')")
+WRITE (UFFF,"('#'/,' GWF MeanWind ')")
 
-! Write mean wind speed in all points
-!    WRITE (UFFF,FormStr9)
-!DO IY=1,p_grid%NumGrid_Y
-!DO IZ=1,p_grid%NumGrid_Z
+! Write mean wind speed in all points - no power law is used here (for now) JT Horn
+    WRITE (UFFF,FormStr9)
+DO IY=1,p_grid%NumGrid_Y
+DO IZ=1,p_grid%NumGrid_Z
 
-!WRITE(UFFF,FormStr10)  p_grid%U(IZ), real(0), real(0)
+WRITE(UFFF,FormStr10)  UHub, real(0), real(0) ! Changed from U(IZ) to UHub - JT Horn
 
-!ENDDO ! IZ
-!ENDDO ! IY
+ENDDO ! IZ
+ENDDO ! IY
 
 
 ! Write out elapsed time & hub-level value before component grid.
